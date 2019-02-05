@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:paddingLeft="10sp"
+    android:paddingTop="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Username placholder"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="10dp"
+            android:text="Email: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_marginBottom="10sp"
+            android:layout_toRightOf="@id/emailLabel"
+            android:text="Email example"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/websiteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailLabel"
+            android:layout_marginBottom="10dp"
+            android:text="Website: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userEmail"
+            android:layout_marginBottom="10sp"
+            android:layout_toRightOf="@id/websiteLabel"
+            android:text="Website example"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/phoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/websiteLabel"
+            android:layout_marginBottom="10dp"
+            android:text="Phone: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userWebsite"
+            android:layout_toRightOf="@id/phoneLabel"
+            android:text="Phone example"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/addressInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneLabel"
+            android:text="Address info: "
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/addressSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressInfoTitle"
+            android:paddingLeft="10sp">
+
+            <TextView
+                android:id="@+id/streetLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Street name: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/streetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/streetLabel"
+                android:text="Street name example"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/suiteLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/streetLabel"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Suite: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/suite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/streetName"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/suiteLabel"
+                android:text="Suite name example"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cityLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/suiteLabel"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="City : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/suite"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/cityLabel"
+                android:text="City name example"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/zipcodeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cityLabel"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Zipcode : "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/zipcodeLabel"
+                android:text="Zipcode name example"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/geoTitleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/zipcodeLabel"
+                android:layout_marginBottom="10sp"
+                android:text="Geo information:"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/geoTitleLabel"
+                android:paddingLeft="10sp"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:id="@+id/geoLatLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="Latitude: "
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/geoLat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10sp"
+                    android:layout_toRightOf="@id/geoLatLabel"
+                    android:text="3000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/geoLonLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/geoLatLabel"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="Longitude: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/geoLon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/geoLat"
+                    android:layout_marginBottom="10sp"
+                    android:layout_toRightOf="@id/geoLonLabel"
+                    android:text="3000000"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/companyInfoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressSection"
+            android:layout_marginBottom="10sp"
+            android:text="Company info: "
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/companyInfoTitle"
+            android:paddingLeft="10sp">
+
+            <TextView
+                android:id="@+id/companyNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Name: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/companyNameLabel"
+                android:text="Name example"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/companyCatchPhraseLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyNameLabel"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Catch phrase: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/companyCatchPhrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyName"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/companyCatchPhraseLabel"
+                android:text="Cactch phrase"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/companyBsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyCatchPhraseLabel"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Bs: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/companyBs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyCatchPhrase"
+                android:layout_marginBottom="10sp"
+                android:layout_toRightOf="@id/companyBsLabel"
+                android:text="Bs example"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
